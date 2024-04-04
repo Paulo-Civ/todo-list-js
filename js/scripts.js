@@ -60,3 +60,16 @@ todoForm.addEventListener("submit", (e) => {
         saveTodo(inputValue);
     }
 });
+
+document.addEventListener("click", (e) => {
+    const targetElement = e.target;
+    const parentElement = targetElement.closest("div");
+
+    if(targetElement.classList.contains("finish-todo")) {
+        parentElement.classList.toggle("done");
+    }
+
+    if(targetElement.classList.contains("remove-todo")) {
+        parentElement.remove();
+    }
+})
