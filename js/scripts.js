@@ -1,1 +1,5 @@
-console.log("teste");
+// Seleção de elementos
+
+// Funções
+
+// Eventos
